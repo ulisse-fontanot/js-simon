@@ -1,19 +1,18 @@
 var listaRandom = [];
 var listaUtente = [];
 
-setTimeout(myFunction, 3000);
-
+//LISTA RANDOM
 while(listaRandom.length < 5){
   var random = numeri(1,20);
   if (!listaRandom.includes(random)) {
     listaRandom.push(random);
   }
 }
-
 console.log(listaRandom);
 alert(listaRandom);
 
-
+//LISTA UTENTE
+setTimeout(myFunction, 3000);
 function myFunction() {
   while(listaUtente.length < 5) {
     var numeroUtente = parseInt(prompt("inserisci numero"));
@@ -30,6 +29,8 @@ function myFunction() {
 }
 console.log(listaUtente);
 
+
+//FUNZIONI RIUTILIZZABILI
 function numeri(min,max) {
 return Math.floor(Math.random() * (max - min) ) + min;
 }
