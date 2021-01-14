@@ -1,9 +1,11 @@
 var listaRandom = [];
 var listaUtente = [];
 
-while (listaRandom.length < 5) {
+for (var i = 0; i < 5; i++){
   var random = numeri(1,20);
-  (listaRandom).push(random);
+  if (listaRandom.includes(random)) {
+    (listaRandom).push(random);
+  }
 }
 
 console.log(listaRandom);
