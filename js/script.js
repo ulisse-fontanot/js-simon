@@ -26,14 +26,15 @@ function myFunction() {
     }
   }
   console.log(listaUtente);
+
+  //CONTROLLO VITTORIA
+  if (listaUtente.includes(random)) {
+    console.log("hai indovinato");
+    alert("hai indovinato");
+  }
 }
 
-//CONTROLLO VITTORIA
 
-if (listaUtente.includes(random)) {
-  console.log("hai indovinato");
-  alert("hai indovinato");
-}
 
 //FUNZIONI RIUTILIZZABILI
 function numeri(min,max) {
