@@ -1,6 +1,7 @@
 var listaRandom = [];
 var listaUtente = [];
 var giusti = [];
+var numeroUtente;
 
 //LISTA RANDOM
 while(listaRandom.length < 5){
@@ -16,7 +17,7 @@ alert(listaRandom);
 setTimeout(myFunction, 3000);
 function myFunction() {
   while(listaUtente.length < 5) {
-    var numeroUtente = parseInt(prompt("inserisci numero"));
+    numeroUtente = parseInt(prompt("inserisci numero"));
     if (numeroUtente <= 20 && numeroUtente > 0) {
       if (!listaUtente.includes(numeroUtente)) {
         listaUtente.push(numeroUtente);
@@ -28,7 +29,7 @@ function myFunction() {
   console.log(listaUtente);
 
   //CONTROLLO VITTORIA
-  if (listaUtente.includes(random)) {
+  if (listaRandom.includes(numeroUtente)) {
     console.log("hai indovinato");
     alert("hai indovinato");
   }
